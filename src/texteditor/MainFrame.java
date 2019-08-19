@@ -170,6 +170,7 @@ public class MainFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    //this is the New function that allows users to create a new fresh window
     private void newMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newMenuItemActionPerformed
         // TODO add your handling code here:
         new MainFrame().setVisible(true);
