@@ -5,6 +5,9 @@
  */
 package texteditor;
 
+import java.io.File;
+import javax.swing.JFileChooser;
+import javax.swing.filechooser.FileSystemView;
 /**
  *
  * @author 14400
@@ -14,9 +17,9 @@ public class MainFrame extends javax.swing.JFrame {
     /**
      * Creates new form MainFrame
      */
+    int returnValueFileChooser;
     public MainFrame() {
         initComponents();
-        jFileChooser2.setVisible(false);
     }
 
     /**
@@ -31,7 +34,6 @@ public class MainFrame extends javax.swing.JFrame {
         jFileChooser1 = new javax.swing.JFileChooser();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jFileChooser2 = new javax.swing.JFileChooser();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         newMenuItem = new javax.swing.JMenuItem();
@@ -57,12 +59,6 @@ public class MainFrame extends javax.swing.JFrame {
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
-
-        jFileChooser2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFileChooser2ActionPerformed(evt);
-            }
-        });
 
         jMenu1.setText("File");
 
@@ -154,17 +150,11 @@ public class MainFrame extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jFileChooser2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 611, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jFileChooser2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 397, Short.MAX_VALUE)
         );
 
         pack();
@@ -186,14 +176,18 @@ public class MainFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem9ActionPerformed
 
-    private void jFileChooser2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFileChooser2ActionPerformed
-        // TODO add your handling code here:
-        jFileChooser2.setVisible(false);
-    }//GEN-LAST:event_jFileChooser2ActionPerformed
-
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
-        jFileChooser2.setVisible(true);
+        JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
+
+        int returnValue = jfc.showOpenDialog(null);
+        // int returnValue = jfc.showSaveDialog(null);
+
+        if (returnValue == JFileChooser.APPROVE_OPTION) {
+                File selectedFile = jfc.getSelectedFile();
+                System.out.println(selectedFile.getAbsolutePath());
+        }
+
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
@@ -234,7 +228,6 @@ public class MainFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu Search;
     private javax.swing.JFileChooser jFileChooser1;
-    private javax.swing.JFileChooser jFileChooser2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
