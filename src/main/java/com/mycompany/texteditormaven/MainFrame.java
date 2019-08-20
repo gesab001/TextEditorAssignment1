@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package texteditor;
+package com.mycompany.texteditormaven;
 
 import java.awt.Graphics;
 import java.awt.print.PageFormat;
