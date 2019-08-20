@@ -5,6 +5,11 @@
  */
 package texteditor;
 
+import java.awt.Graphics;
+import java.awt.print.PageFormat;
+import java.awt.print.Printable;
+import java.awt.print.PrinterException;
+import java.awt.print.PrinterJob;
 import java.io.File;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileSystemView;
@@ -26,17 +31,21 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.text.DefaultStyledDocument;
+import javax.swing.text.StyleContext;
 /**
  *
  * @author 14400
  */
-public class MainFrame extends javax.swing.JFrame {
+public class MainFrame extends javax.swing.JFrame implements Printable {
 
+        protected DefaultStyledDocument m_doc;
+        StyleContext m_context;
     /**
      * Creates new form MainFrame
      */
-    int returnValueFileChooser;
     public MainFrame() {
+
         initComponents();
     }
 
@@ -58,7 +67,7 @@ public class MainFrame extends javax.swing.JFrame {
         openMenuItem = new javax.swing.JMenuItem();
         saveMenuItem = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
-        jMenuItem10 = new javax.swing.JMenuItem();
+        printMenuItem = new javax.swing.JMenuItem();
         jMenuItem11 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
         Search = new javax.swing.JMenu();
@@ -108,9 +117,14 @@ public class MainFrame extends javax.swing.JFrame {
         jMenu1.add(saveMenuItem);
         jMenu1.add(jSeparator1);
 
-        jMenuItem10.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem10.setText("Print");
-        jMenu1.add(jMenuItem10);
+        printMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_MASK));
+        printMenuItem.setText("Print");
+        printMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                printMenuItemActionPerformed(evt);
+            }
+        });
+        jMenu1.add(printMenuItem);
 
         jMenuItem11.setText("Export to PDF");
         jMenu1.add(jMenuItem11);
@@ -268,6 +282,18 @@ public class MainFrame extends javax.swing.JFrame {
           }
     }//GEN-LAST:event_saveMenuItemActionPerformed
 
+    private void printMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_printMenuItemActionPerformed
+        // TODO add your handling code here:
+        PrinterJob pj = PrinterJob.getPrinterJob();
+        pj.setPrintable(jTextArea1.getPrintable(null, null));
+        if (pj.printDialog()) {
+            try {pj.print();}
+            catch (PrinterException exc) {
+                System.out.println(exc);
+             }
+         } 
+    }//GEN-LAST:event_printMenuItemActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -311,7 +337,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem11;
     private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem4;
@@ -325,6 +350,12 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JMenuItem newMenuItem;
     private javax.swing.JMenuItem openMenuItem;
+    private javax.swing.JMenuItem printMenuItem;
     private javax.swing.JMenuItem saveMenuItem;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public int print(Graphics grphcs, PageFormat pf, int i) throws PrinterException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
