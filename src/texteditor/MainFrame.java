@@ -8,6 +8,22 @@ package texteditor;
 import java.io.File;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileSystemView;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /**
  *
  * @author 14400
@@ -179,13 +195,33 @@ public class MainFrame extends javax.swing.JFrame {
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
         JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
-
+        jTextArea1.setWrapStyleWord(true);
+        jTextArea1.setLineWrap(true);
         int returnValue = jfc.showOpenDialog(null);
         // int returnValue = jfc.showSaveDialog(null);
 
         if (returnValue == JFileChooser.APPROVE_OPTION) {
                 File selectedFile = jfc.getSelectedFile();
                 System.out.println(selectedFile.getAbsolutePath());
+                Path path = Paths.get(selectedFile.getAbsolutePath());
+                Scanner scanner;
+            try {
+                scanner = new Scanner(path);
+                    System.out.println("Read text file using Scanner");
+                //read line by line
+                while(scanner.hasNextLine()){
+                    //process each line
+                    String line = scanner.nextLine();
+                    System.out.println(line);
+                    jTextArea1.append(line + "\n");
+                    
+                }
+                scanner.close();
+            } catch (IOException ex) {
+                Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
+                
         }
 
     }//GEN-LAST:event_jMenuItem2ActionPerformed
