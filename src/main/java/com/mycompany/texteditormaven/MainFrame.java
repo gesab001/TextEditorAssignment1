@@ -19,7 +19,9 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.TextArea;
 import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.StringSelection;
+import java.awt.datatransfer.Transferable;
 import java.awt.print.PageFormat;
 import java.awt.print.Printable;
 import java.awt.print.PrinterException;
@@ -300,7 +302,16 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     }//GEN-LAST:event_newMenuItemActionPerformed
 
     private void pasteMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pasteMenuItemActionPerformed
-        // TODO add your handling code here:
+        try{
+            Clipboard cboard = getToolkit().getSystemClipboard();
+            Transferable paste = cboard.getContents(this);
+            String sel = (String) paste.getTransferData(DataFlavor.stringFlavor);
+            jTextArea1.replaceRange(sel, jTextArea1.getSelectionStart(), jTextArea1.getSelectionEnd());
+        }
+        catch(Exception e){
+            System.out.println("Paste failed");
+            
+        }
     }//GEN-LAST:event_pasteMenuItemActionPerformed
 
     private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
