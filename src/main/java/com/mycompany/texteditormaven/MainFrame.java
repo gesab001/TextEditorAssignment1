@@ -444,7 +444,11 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void CopyMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CopyMenuItemActionPerformed
-        // TODO add your handling code here:
+        Clipboard cboard = getToolkit().getSystemClipboard();
+        String copyTxt = jTextArea1.getSelectedText();
+        StringSelection cselect = new StringSelection(copyTxt);
+        cboard.setContents(cselect, cselect);
+        
     }//GEN-LAST:event_CopyMenuItemActionPerformed
 
     private void cutMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cutMenuItemActionPerformed
