@@ -5,6 +5,16 @@
  */
 package com.mycompany.texteditormaven;
 
+import com.itextpdf.text.BaseColor;
+import com.itextpdf.text.pdf.PdfDocument; 
+import com.itextpdf.text.pdf.PdfWriter; 
+import com.itextpdf.text.Document;  
+import com.itextpdf.text.Chunk;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.FontFactory;
+import com.itextpdf.text.Font;
+import com.itextpdf.text.Paragraph;
+
 import java.awt.Graphics;
 import java.awt.print.PageFormat;
 import java.awt.print.Printable;
@@ -13,11 +23,17 @@ import java.awt.print.PrinterJob;
 import java.io.File;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileSystemView;
+import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
+
+
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -27,12 +43,15 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.text.DefaultStyledDocument;
 import javax.swing.text.StyleContext;
+
 
 /**
  *
@@ -69,7 +88,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         saveMenuItem = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         printMenuItem = new javax.swing.JMenuItem();
-        jMenuItem11 = new javax.swing.JMenuItem();
+        pdfExportMenuItem = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
         Search = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -127,8 +146,13 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         });
         jMenu1.add(printMenuItem);
 
-        jMenuItem11.setText("Export to PDF");
-        jMenu1.add(jMenuItem11);
+        pdfExportMenuItem.setText("Save as PDF");
+        pdfExportMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pdfExportMenuItemActionPerformed(evt);
+            }
+        });
+        jMenu1.add(pdfExportMenuItem);
 
         jMenuItem4.setLabel("Exit");
         jMenu1.add(jMenuItem4);
@@ -295,6 +319,38 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
          } 
     }//GEN-LAST:event_printMenuItemActionPerformed
 
+    private void pdfExportMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pdfExportMenuItemActionPerformed
+        // TODO add your handling code here:
+
+        Document document = new Document();
+        
+        JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
+        FileNameExtensionFilter filter = new FileNameExtensionFilter(
+        "*.pdf", "pdf");
+        jfc.setFileFilter(filter);
+        int returnValue = jfc.showSaveDialog(null);
+        if (returnValue == JFileChooser.APPROVE_OPTION) {
+            try {
+                String content = jTextArea1.getText();
+
+                File selectedFile = jfc.getSelectedFile();
+                String filename = selectedFile.getAbsolutePath().toString() + ".pdf";
+                System.out.println();
+                PdfWriter.getInstance(document, new FileOutputStream(filename));
+                document.open();
+                Font font = FontFactory.getFont(FontFactory.COURIER, 16, BaseColor.BLACK);
+                document.add(new Paragraph(content));
+                document.close();
+                System.out.println("New pdf created");
+
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (DocumentException ex) {
+                Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }//GEN-LAST:event_pdfExportMenuItemActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -338,7 +394,6 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem11;
     private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
@@ -351,6 +406,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JMenuItem newMenuItem;
     private javax.swing.JMenuItem openMenuItem;
+    private javax.swing.JMenuItem pdfExportMenuItem;
     private javax.swing.JMenuItem printMenuItem;
     private javax.swing.JMenuItem saveMenuItem;
     // End of variables declaration//GEN-END:variables
