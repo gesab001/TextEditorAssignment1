@@ -29,6 +29,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 
 
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -427,7 +428,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         removeYellow(textComp);
         try{
            Highlighter hlight = textComp.getHighlighter();
-           Document doc = textComp.getDocument();
+            javax.swing.text.Document doc = textComp.getDocument();
            String text = doc.getText(0,doc.getLength());
            
            int pos = 0;
