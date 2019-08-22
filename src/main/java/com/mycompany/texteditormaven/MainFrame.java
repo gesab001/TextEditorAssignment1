@@ -196,6 +196,11 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         jMenu1.add(pdfExportMenuItem);
 
         jMenuItem4.setLabel("Exit");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem4);
 
         jMenuBar1.add(jMenu1);
@@ -403,6 +408,10 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private void searchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBtnActionPerformed
        searchArea(jTextArea1, searchField.getText());
     }//GEN-LAST:event_searchBtnActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
     
     class YellowHighlighter extends DefaultHighlighter.DefaultHighlightPainter{
         
