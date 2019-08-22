@@ -14,6 +14,7 @@ import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.FontFactory;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.Paragraph;
+import java.awt.Color;
 
 import java.awt.Graphics;
 import java.awt.print.PageFormat;
@@ -49,7 +50,10 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.text.DefaultHighlighter;
 import javax.swing.text.DefaultStyledDocument;
+import javax.swing.text.Highlighter;
+import javax.swing.text.JTextComponent;
 import javax.swing.text.StyleContext;
 
 
@@ -81,6 +85,9 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         jFileChooser1 = new javax.swing.JFileChooser();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        jPanel1 = new javax.swing.JPanel();
+        searchField = new javax.swing.JTextField();
+        searchBtn = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         newMenuItem = new javax.swing.JMenuItem();
@@ -106,6 +113,39 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
+
+        searchField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchFieldActionPerformed(evt);
+            }
+        });
+
+        searchBtn.setText("Search");
+        searchBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchBtnActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(searchField, javax.swing.GroupLayout.PREFERRED_SIZE, 452, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(searchBtn)
+                .addGap(31, 31, 31))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(searchField)
+                    .addComponent(searchBtn)))
+        );
 
         jMenu1.setText("File");
 
@@ -213,10 +253,14 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 611, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 397, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 442, Short.MAX_VALUE))
         );
 
         pack();
@@ -351,6 +395,55 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         }
     }//GEN-LAST:event_pdfExportMenuItemActionPerformed
 
+    private void searchFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchFieldActionPerformed
+
+    private void searchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBtnActionPerformed
+       searchArea(jTextArea1, searchField.getText());
+    }//GEN-LAST:event_searchBtnActionPerformed
+    
+    class YellowHighlighter extends DefaultHighlighter.DefaultHighlightPainter{
+        
+        public YellowHighlighter(Color c) {
+            super(c);
+        }
+       
+         
+    }
+    DefaultHighlighter.HighlightPainter highlight = new YellowHighlighter(Color.yellow);
+    
+    public void removeYellow(JTextComponent textComponent){
+        Highlighter removehlight = textComponent.getHighlighter();
+        Highlighter.Highlight[] remove = removehlight.getHighlights();
+        //
+        for(int i=0; i<remove.length; i++){
+            if(remove[i].getPainter() instanceof YellowHighlighter){
+            removehlight.removeHighlight(remove[i]);
+        }
+        }
+    }
+    public void searchArea(JTextComponent textComp, String tstring){
+        removeYellow(textComp);
+        try{
+           Highlighter hlight = textComp.getHighlighter();
+           Document doc = textComp.getDocument();
+           String text = doc.getText(0,doc.getLength());
+           
+           int pos = 0;
+           
+           while((pos = text.toUpperCase().indexOf(tstring.toUpperCase(),pos))>=0){
+               hlight.addHighlight(pos, pos+tstring.length(), highlight);
+               pos += tstring.length();
+               
+           }
+           
+        }
+        catch(Exception e){
+           
+            
+        }
+    }
     /**
      * @param args the command line arguments
      */
@@ -401,6 +494,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JTextArea jTextArea1;
@@ -409,6 +503,8 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private javax.swing.JMenuItem pdfExportMenuItem;
     private javax.swing.JMenuItem printMenuItem;
     private javax.swing.JMenuItem saveMenuItem;
+    private javax.swing.JButton searchBtn;
+    private javax.swing.JTextField searchField;
     // End of variables declaration//GEN-END:variables
 
     @Override
