@@ -5,6 +5,10 @@
  */
 package com.mycompany.texteditormaven;
 
+import javax.swing.*;
+import org.fife.ui.rtextarea.*;
+import org.fife.ui.rsyntaxtextarea.*;
+
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.pdf.PdfDocument; 
 import com.itextpdf.text.pdf.PdfWriter; 
@@ -14,6 +18,7 @@ import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.FontFactory;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.Paragraph;
+import java.awt.BorderLayout;
 import java.awt.Color;
 
 import java.awt.Graphics;
@@ -72,6 +77,20 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     public MainFrame() {
 
         initComponents();
+        cp = new JPanel(new BorderLayout());
+        textArea = new RSyntaxTextArea(20, 60);
+        textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_JAVA);
+        textArea.setCodeFoldingEnabled(true);
+        sp = new RTextScrollPane(textArea);
+        cp.add(sp);
+
+        setContentPane(cp);
+        setTitle("Text Editor");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        pack();
+        setLocationRelativeTo(null);
+// 
+
     }
 
     /**
@@ -84,9 +103,10 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private void initComponents() {
 
         jFileChooser1 = new javax.swing.JFileChooser();
+        jPopupMenu1 = new javax.swing.JPopupMenu();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jPanel1 = new javax.swing.JPanel();
+        SearchBar = new javax.swing.JPanel();
         searchField = new javax.swing.JTextField();
         searchBtn = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
@@ -98,7 +118,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         printMenuItem = new javax.swing.JMenuItem();
         pdfExportMenuItem = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
-        Search = new javax.swing.JMenu();
+        SearchMenuItem = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
@@ -114,6 +134,11 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
+        //RSyntaxTextArea jTextArea1 = new RSyntaxTextArea(20, 60);
+        //        textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_JAVA);
+        //        textArea.setCodeFoldingEnabled(true);
+        //        RTextScrollPane sp = new RTextScrollPane(textArea);
+        //jScrollPanel.setViewportView(sp);
 
         searchField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -128,22 +153,22 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout SearchBarLayout = new javax.swing.GroupLayout(SearchBar);
+        SearchBar.setLayout(SearchBarLayout);
+        SearchBarLayout.setHorizontalGroup(
+            SearchBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SearchBarLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(searchField, javax.swing.GroupLayout.PREFERRED_SIZE, 452, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
                 .addComponent(searchBtn)
                 .addGap(31, 31, 31))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+        SearchBarLayout.setVerticalGroup(
+            SearchBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchBarLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(SearchBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(searchField)
                     .addComponent(searchBtn)))
         );
@@ -205,8 +230,17 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
 
         jMenuBar1.add(jMenu1);
 
-        Search.setLabel("Search");
-        jMenuBar1.add(Search);
+        SearchMenuItem.setLabel("Search");
+        SearchMenuItem.addMenuListener(new javax.swing.event.MenuListener() {
+            public void menuCanceled(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuDeselected(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuSelected(javax.swing.event.MenuEvent evt) {
+                SearchMenuItemMenuSelected(evt);
+            }
+        });
+        jMenuBar1.add(SearchMenuItem);
 
         jMenu2.setLabel("View");
         jMenuBar1.add(jMenu2);
@@ -258,16 +292,28 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 611, Short.MAX_VALUE)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(SearchBar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(SearchBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 442, Short.MAX_VALUE))
         );
+
+        //RSyntaxTextArea textArea = new RSyntaxTextArea(20, 60);
+        //textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_JAVA);
+        //textArea.setCodeFoldingEnabled(true);
+        //RTextScrollPane sp = new RTextScrollPane(textArea);
+        //SearchBar.add(sp);
+        //
+        //
+        //setContentPane(SearchBar);
+        //setTitle("Text Editor");
+        //setDefaultCloseOperation(EXIT_ON_CLOSE);
+        //setLocationRelativeTo(null);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -294,8 +340,31 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private void openMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openMenuItemActionPerformed
         // TODO add your handling code here:
         JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
-        jTextArea1.setWrapStyleWord(true);
-        jTextArea1.setLineWrap(true);
+            FileNameExtensionFilter filterpdf = new FileNameExtensionFilter(
+        "*.pdf", "pdf");
+        jfc.addChoosableFileFilter(filterpdf);
+        FileNameExtensionFilter filterjava = new FileNameExtensionFilter(
+        "*.java", "java");
+        jfc.addChoosableFileFilter(filterjava);
+                    FileNameExtensionFilter filterpython = new FileNameExtensionFilter(
+        "*.python", "python");
+        jfc.addChoosableFileFilter(filterpython);
+//        jTextArea1.setWrapStyleWord(true);
+//        jTextArea1.setLineWrap(true);
+//        JPanel cp = new JPanel(new BorderLayout());
+//
+//           RSyntaxTextArea textArea = new RSyntaxTextArea(20, 60);
+//           textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_JAVA);
+//           textArea.setCodeFoldingEnabled(true);
+//           RTextScrollPane sp = new RTextScrollPane(textArea);
+//           cp.add(sp);
+//
+//           setContentPane(cp);
+//           setTitle("Text Editor");
+//           setDefaultCloseOperation(EXIT_ON_CLOSE);
+//           pack();
+//           setLocationRelativeTo(null);
+//           textArea.append("hello there");
         int returnValue = jfc.showOpenDialog(null);
         // int returnValue = jfc.showSaveDialog(null);
 
@@ -303,6 +372,15 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
                 File selectedFile = jfc.getSelectedFile();
                 System.out.println(selectedFile.getAbsolutePath());
                 Path path = Paths.get(selectedFile.getAbsolutePath());
+                if (path.endsWith("java")){
+                   textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_JAVA);
+                }
+                if (path.endsWith("py")){
+                    textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_PYTHON);
+                }
+                if (path.endsWith("cpp")){
+                    textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_CPLUSPLUS);
+                }
                 Scanner scanner;
             try {
                 scanner = new Scanner(path);
@@ -312,7 +390,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
                     //process each line
                     String line = scanner.nextLine();
                     System.out.println(line);
-                    jTextArea1.append(line + "\n");
+                    textArea.append(line + "\n");
                     
                 }
                 scanner.close();
@@ -333,7 +411,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         int returnValue = jfc.showSaveDialog(null);
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             try {
-                String content = jTextArea1.getText();
+                String content = textArea.getText();
                 File selectedFile = jfc.getSelectedFile();
                 
                 System.out.println(selectedFile.getAbsolutePath());
@@ -360,7 +438,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private void printMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_printMenuItemActionPerformed
         // TODO add your handling code here:
         PrinterJob pj = PrinterJob.getPrinterJob();
-        pj.setPrintable(jTextArea1.getPrintable(null, null));
+        pj.setPrintable(textArea.getPrintable(null, null));
         if (pj.printDialog()) {
             try {pj.print();}
             catch (PrinterException exc) {
@@ -381,7 +459,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         int returnValue = jfc.showSaveDialog(null);
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             try {
-                String content = jTextArea1.getText();
+                String content = textArea.getText();
 
                 File selectedFile = jfc.getSelectedFile();
                 String filename = selectedFile.getAbsolutePath().toString() + ".pdf";
@@ -412,6 +490,10 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void SearchMenuItemMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_SearchMenuItemMenuSelected
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SearchMenuItemMenuSelected
     
     class YellowHighlighter extends DefaultHighlighter.DefaultHighlightPainter{
         
@@ -490,7 +572,8 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu Search;
+    private javax.swing.JPanel SearchBar;
+    private javax.swing.JMenu SearchMenuItem;
     private javax.swing.JFileChooser jFileChooser1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
@@ -504,7 +587,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JTextArea jTextArea1;
@@ -516,6 +599,9 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private javax.swing.JButton searchBtn;
     private javax.swing.JTextField searchField;
     // End of variables declaration//GEN-END:variables
+    private RSyntaxTextArea textArea;
+    private javax.swing.JPanel cp;
+    private RTextScrollPane sp;
 
     @Override
     public int print(Graphics grphcs, PageFormat pf, int i) throws PrinterException {
