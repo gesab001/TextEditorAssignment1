@@ -50,8 +50,10 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 import java.util.logging.Level;
@@ -112,7 +114,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         pasteMenuItem = new javax.swing.JMenuItem();
         cutMenuItem = new javax.swing.JMenuItem();
         selectAllMenuItem = new javax.swing.JMenuItem();
-        jMenuItem9 = new javax.swing.JMenuItem();
+        timeDateMenuItem = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem12 = new javax.swing.JMenuItem();
 
@@ -256,14 +258,14 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         });
         jMenu3.add(selectAllMenuItem);
 
-        jMenuItem9.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F5, 0));
-        jMenuItem9.setLabel("Time/Date");
-        jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
+        timeDateMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F5, 0));
+        timeDateMenuItem.setLabel("Time/Date");
+        timeDateMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem9ActionPerformed(evt);
+                timeDateMenuItemActionPerformed(evt);
             }
         });
-        jMenu3.add(jMenuItem9);
+        jMenu3.add(timeDateMenuItem);
 
         jMenuBar1.add(jMenu3);
 
@@ -320,9 +322,10 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         }
     }//GEN-LAST:event_pasteMenuItemActionPerformed
 
-    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem9ActionPerformed
+    private void timeDateMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeDateMenuItemActionPerformed
+        //SimpleDateFormat date = new SimpleDateFormat();
+        jTextArea1.append(new Date().toString());
+    }//GEN-LAST:event_timeDateMenuItemActionPerformed
 
     /* opens a file from FileChooser dialog and reads the text file and prints 
        it to the text area inside textedito window
@@ -564,7 +567,6 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
@@ -578,6 +580,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private javax.swing.JButton searchBtn;
     private javax.swing.JTextField searchField;
     private javax.swing.JMenuItem selectAllMenuItem;
+    private javax.swing.JMenuItem timeDateMenuItem;
     // End of variables declaration//GEN-END:variables
 
     @Override
