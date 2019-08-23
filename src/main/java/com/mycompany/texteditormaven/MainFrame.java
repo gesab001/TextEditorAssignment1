@@ -44,6 +44,7 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
@@ -64,6 +65,11 @@ import javax.swing.text.DefaultStyledDocument;
 import javax.swing.text.Highlighter;
 import javax.swing.text.JTextComponent;
 import javax.swing.text.StyleContext;
+import javax.swing.text.rtf.RTFEditorKit;
+import org.apache.poi.xwpf.usermodel.XWPFDocument;
+import org.apache.poi.xwpf.usermodel.XWPFParagraph;
+
+
 
 
 /**
@@ -332,7 +338,14 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     */
     private void openMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openMenuItemActionPerformed
         // TODO add your handling code here:
+        RTFEditorKit rtfTool = new RTFEditorKit();
+        //Document doc = (Document) rtfTool.createDefaultDocument();
         JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
+        //FileNameExtensionFilter rtfFilter = new FileNameExtensionFilter("Rich Text Format Files(*.rtf)", "rtf");
+        FileNameExtensionFilter docxFilter = new FileNameExtensionFilter("Word files(*.docx)", "docx");
+        jfc.setFileFilter(docxFilter);
+        DefaultStyledDocument doc = new DefaultStyledDocument();
+          
         jTextArea1.setWrapStyleWord(true);
         jTextArea1.setLineWrap(true);
         int returnValue = jfc.showOpenDialog(null);
@@ -340,9 +353,31 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
 
         if (returnValue == JFileChooser.APPROVE_OPTION) {
                 File selectedFile = jfc.getSelectedFile();
+                String filetype = selectedFile.toString();
                 System.out.println(selectedFile.getAbsolutePath());
                 Path path = Paths.get(selectedFile.getAbsolutePath());
                 Scanner scanner;
+                String result = null;
+                
+                if(filetype.endsWith(".docx")){
+                    try {
+                        
+                        InputStream is = new FileInputStream(selectedFile);
+                        XWPFDocument document = new XWPFDocument(is);
+                        List<XWPFParagraph> paragraphs = document.getParagraphs();
+                        for (XWPFParagraph para : paragraphs) {
+                            System.out.println(para.getText());
+                            jTextArea1.append(para.getText()+"\n");
+                        }
+                        //rtfTool.read(is, (javax.swing.text.Document) doc, 0);
+                        //result = new String(doc.getText(0,doc.getLength()).
+                        //            getBytes("ISO8859_1"));
+                        //jTextArea1.append(result);
+                        
+                    } catch (Exception e) {
+                    }
+                }
+                else{
             try {
                 scanner = new Scanner(path);
                     System.out.println("Read text file using Scanner");
@@ -358,9 +393,12 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
             } catch (IOException ex) {
                 Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
             }
+                }
+            
             
                 
         }
+        
 
     }//GEN-LAST:event_openMenuItemActionPerformed
 
