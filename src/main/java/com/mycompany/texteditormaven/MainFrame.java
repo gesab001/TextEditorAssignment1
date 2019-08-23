@@ -56,6 +56,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import javax.swing.text.DefaultHighlighter;
 import javax.swing.text.DefaultStyledDocument;
 import javax.swing.text.Highlighter;
@@ -269,6 +270,11 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         jMenu4.setLabel("Help");
 
         jMenuItem12.setLabel("About TextEditor");
+        jMenuItem12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem12ActionPerformed(evt);
+            }
+        });
         jMenu4.add(jMenuItem12);
 
         jMenuBar1.add(jMenu4);
@@ -465,6 +471,10 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         //cboard.getContents(jTextArea1.getText());
         jTextArea1.selectAll();
     }//GEN-LAST:event_selectAllMenuItemActionPerformed
+
+    private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
+        JOptionPane.showMessageDialog(this, "Copyright (c) 2019 , Giovanni Saberon, Adam Petherick\nAll rights reserved. \nRedistribution and use in source and binary forms, with or \nwithout modification, are permitted provided that the \nfollowing conditions are met: \n1. Redistributions of source code must retain the above \n copyright notice, this list of conditions and the following \ndisclaimer.\n2. Redistributions in binary form must reproduce the above \ncopyright notice, this list of conditions and the following \ndisclaimer in the documentation and/or other materials \nprovided with the distribution. ");
+    }//GEN-LAST:event_jMenuItem12ActionPerformed
     
     class YellowHighlighter extends DefaultHighlighter.DefaultHighlightPainter{
         

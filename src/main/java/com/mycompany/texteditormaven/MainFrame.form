@@ -156,6 +156,9 @@
               <Properties>
                 <Property name="label" type="java.lang.String" value="About TextEditor"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem12ActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
