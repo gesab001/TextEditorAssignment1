@@ -110,7 +110,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         CopyMenuItem = new javax.swing.JMenuItem();
         pasteMenuItem = new javax.swing.JMenuItem();
         cutMenuItem = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
+        selectAllMenuItem = new javax.swing.JMenuItem();
         jMenuItem9 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem12 = new javax.swing.JMenuItem();
@@ -246,14 +246,14 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         });
         jMenu3.add(cutMenuItem);
 
-        jMenuItem8.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem8.setLabel("Select All");
-        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+        selectAllMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
+        selectAllMenuItem.setLabel("Select All");
+        selectAllMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem8ActionPerformed(evt);
+                selectAllMenuItemActionPerformed(evt);
             }
         });
-        jMenu3.add(jMenuItem8);
+        jMenu3.add(selectAllMenuItem);
 
         jMenuItem9.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F5, 0));
         jMenuItem9.setLabel("Time/Date");
@@ -460,9 +460,11 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         
     }//GEN-LAST:event_cutMenuItemActionPerformed
 
-    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem8ActionPerformed
+    private void selectAllMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectAllMenuItemActionPerformed
+        //Clipboard cboard = getToolkit().getSystemClipboard();
+        //cboard.getContents(jTextArea1.getText());
+        jTextArea1.selectAll();
+    }//GEN-LAST:event_selectAllMenuItemActionPerformed
     
     class YellowHighlighter extends DefaultHighlighter.DefaultHighlightPainter{
         
@@ -552,7 +554,6 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
@@ -566,6 +567,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private javax.swing.JMenuItem saveMenuItem;
     private javax.swing.JButton searchBtn;
     private javax.swing.JTextField searchField;
+    private javax.swing.JMenuItem selectAllMenuItem;
     // End of variables declaration//GEN-END:variables
 
     @Override
