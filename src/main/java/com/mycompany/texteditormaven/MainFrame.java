@@ -68,6 +68,7 @@ import javax.swing.text.StyleContext;
 import javax.swing.text.rtf.RTFEditorKit;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
+import org.apache.poi.xwpf.usermodel.XWPFRun;
 
 
 
@@ -337,14 +338,11 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
        it to the text area inside textedito window
     */
     private void openMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openMenuItemActionPerformed
-        // TODO add your handling code here:
-        RTFEditorKit rtfTool = new RTFEditorKit();
-        //Document doc = (Document) rtfTool.createDefaultDocument();
+        // TODO add your handling code here
         JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
-        //FileNameExtensionFilter rtfFilter = new FileNameExtensionFilter("Rich Text Format Files(*.rtf)", "rtf");
         FileNameExtensionFilter docxFilter = new FileNameExtensionFilter("Word files(*.docx)", "docx");
         jfc.setFileFilter(docxFilter);
-        DefaultStyledDocument doc = new DefaultStyledDocument();
+
           
         jTextArea1.setWrapStyleWord(true);
         jTextArea1.setLineWrap(true);
@@ -357,42 +355,35 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
                 System.out.println(selectedFile.getAbsolutePath());
                 Path path = Paths.get(selectedFile.getAbsolutePath());
                 Scanner scanner;
-                String result = null;
                 
                 if(filetype.endsWith(".docx")){
-                    try {
-                        
+                    try {       
                         InputStream is = new FileInputStream(selectedFile);
                         XWPFDocument document = new XWPFDocument(is);
                         List<XWPFParagraph> paragraphs = document.getParagraphs();
                         for (XWPFParagraph para : paragraphs) {
                             System.out.println(para.getText());
                             jTextArea1.append(para.getText()+"\n");
-                        }
-                        //rtfTool.read(is, (javax.swing.text.Document) doc, 0);
-                        //result = new String(doc.getText(0,doc.getLength()).
-                        //            getBytes("ISO8859_1"));
-                        //jTextArea1.append(result);
-                        
-                    } catch (Exception e) {
+                        }                      
+                    } catch (IOException e) {
                     }
                 }
                 else{
-            try {
-                scanner = new Scanner(path);
-                    System.out.println("Read text file using Scanner");
-                //read line by line
-                while(scanner.hasNextLine()){
-                    //process each line
-                    String line = scanner.nextLine();
-                    System.out.println(line);
-                    jTextArea1.append(line + "\n");
+                    try {
+                        scanner = new Scanner(path);
+                        System.out.println("Read text file using Scanner");
+                        //read line by line
+                        while(scanner.hasNextLine()){
+                        //process each line
+                        String line = scanner.nextLine();
+                        System.out.println(line);
+                        jTextArea1.append(line + "\n");
                     
                 }
                 scanner.close();
-            } catch (IOException ex) {
-                Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
-            }
+                    } catch (IOException ex) {
+                        Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+                    }
                 }
             
             
@@ -407,31 +398,51 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         BufferedWriter bw = null;
         FileWriter fw = null;
         JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
+        jfc.addChoosableFileFilter(new FileNameExtensionFilter("MS Word(.docx)", "docx"));
         int returnValue = jfc.showSaveDialog(null);
         if (returnValue == JFileChooser.APPROVE_OPTION) {
-            try {
                 String content = jTextArea1.getText();
                 File selectedFile = jfc.getSelectedFile();
-                
+                String filetype = selectedFile.toString();
                 System.out.println(selectedFile.getAbsolutePath());
-                fw = new FileWriter(selectedFile.getAbsolutePath());
-                bw = new BufferedWriter(fw);
-                bw.write(content);
-            }catch (IOException e) {
-            System.err.format("IOException: %s%n", e);
-            } finally {
-                try {
-                    if (bw != null)
-                        bw.close();
-
-                    if (fw != null)
-                        fw.close();
-                } catch (IOException ex) {
-                    System.err.format("IOException: %s%n", ex);
+                //write to .docx file
+                if (filetype.endsWith(".docx")){
+                    try {
+                        FileOutputStream fos = new FileOutputStream(selectedFile);
+                        XWPFDocument doc = new XWPFDocument();
+                        for (String line : jTextArea1.getText().split("\\n")) {
+                            doc.createParagraph().createRun().setText(line);
+                        }                     
+                        doc.write(fos);
+                        fos.close();
+                        
+                    } catch (IOException e) {
+                    }
+                    
                 }
-            }
+                else{
+        
+                      
+                    try {
+                        fw = new FileWriter(selectedFile.getAbsolutePath());
+                        bw = new BufferedWriter(fw);
+                        bw.write(content);
+                    }catch (IOException e) {
+                    System.err.format("IOException: %s%n", e);
+                    } finally {
+                        try {
+                            if (bw != null)
+                                bw.close();
+
+                            if (fw != null)
+                                fw.close();
+                        } catch (IOException ex) {
+                            System.err.format("IOException: %s%n", ex);
+                        }
+                    }
           
-          }
+                }
+        }
     }//GEN-LAST:event_saveMenuItemActionPerformed
 
     private void printMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_printMenuItemActionPerformed
