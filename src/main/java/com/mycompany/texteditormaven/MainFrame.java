@@ -17,6 +17,7 @@ import com.itextpdf.text.Paragraph;
 import java.awt.Color;
 
 import java.awt.Graphics;
+import java.awt.GridLayout;
 import java.awt.TextArea;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;
@@ -60,6 +61,8 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 import javax.swing.text.DefaultHighlighter;
 import javax.swing.text.DefaultStyledDocument;
 import javax.swing.text.Highlighter;
@@ -102,9 +105,6 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         jFileChooser1 = new javax.swing.JFileChooser();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jPanel1 = new javax.swing.JPanel();
-        searchField = new javax.swing.JTextField();
-        searchBtn = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         newMenuItem = new javax.swing.JMenuItem();
@@ -115,7 +115,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         pdfExportMenuItem = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
         Search = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
+        findMenuItem = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         CopyMenuItem = new javax.swing.JMenuItem();
         pasteMenuItem = new javax.swing.JMenuItem();
@@ -130,39 +130,6 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
-
-        searchField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchFieldActionPerformed(evt);
-            }
-        });
-
-        searchBtn.setText("Search");
-        searchBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchBtnActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(searchField, javax.swing.GroupLayout.PREFERRED_SIZE, 452, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(searchBtn)
-                .addGap(31, 31, 31))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(searchField)
-                    .addComponent(searchBtn)))
-        );
 
         jMenu1.setText("File");
 
@@ -222,10 +189,17 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         jMenuBar1.add(jMenu1);
 
         Search.setLabel("Search");
-        jMenuBar1.add(Search);
 
-        jMenu2.setLabel("View");
-        jMenuBar1.add(jMenu2);
+        findMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_MASK));
+        findMenuItem.setText("Find");
+        findMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                findMenuItemActionPerformed(evt);
+            }
+        });
+        Search.add(findMenuItem);
+
+        jMenuBar1.add(Search);
 
         jMenu3.setLabel("Manage");
 
@@ -295,14 +269,10 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 611, Short.MAX_VALUE)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 442, Short.MAX_VALUE))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 487, Short.MAX_VALUE)
         );
 
         pack();
@@ -489,14 +459,6 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         }
     }//GEN-LAST:event_pdfExportMenuItemActionPerformed
 
-    private void searchFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchFieldActionPerformed
-
-    private void searchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBtnActionPerformed
-       searchArea(jTextArea1, searchField.getText());
-    }//GEN-LAST:event_searchBtnActionPerformed
-
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
@@ -527,6 +489,16 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
         JOptionPane.showMessageDialog(this, "Copyright (c) 2019 , Giovanni Saberon, Adam Petherick\nAll rights reserved. \nRedistribution and use in source and binary forms, with or \nwithout modification, are permitted provided that the \nfollowing conditions are met: \n1. Redistributions of source code must retain the above \n copyright notice, this list of conditions and the following \ndisclaimer.\n2. Redistributions in binary form must reproduce the above \ncopyright notice, this list of conditions and the following \ndisclaimer in the documentation and/or other materials \nprovided with the distribution. ");
     }//GEN-LAST:event_jMenuItem12ActionPerformed
+
+    private void findMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_findMenuItemActionPerformed
+
+        JTextField searchInput = new JTextField();
+        int option = JOptionPane.showConfirmDialog(null, searchInput, "Word Search", JOptionPane.OK_CANCEL_OPTION);
+        if (option == JOptionPane.OK_OPTION) {
+            searchArea(jTextArea1, searchInput.getText());
+            System.out.println(searchInput.getText());
+        }
+    }//GEN-LAST:event_findMenuItemActionPerformed
     
     class YellowHighlighter extends DefaultHighlighter.DefaultHighlightPainter{
         
@@ -608,15 +580,14 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private javax.swing.JMenuItem CopyMenuItem;
     private javax.swing.JMenu Search;
     private javax.swing.JMenuItem cutMenuItem;
+    private javax.swing.JMenuItem findMenuItem;
     private javax.swing.JFileChooser jFileChooser1;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JTextArea jTextArea1;
@@ -626,8 +597,6 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private javax.swing.JMenuItem pdfExportMenuItem;
     private javax.swing.JMenuItem printMenuItem;
     private javax.swing.JMenuItem saveMenuItem;
-    private javax.swing.JButton searchBtn;
-    private javax.swing.JTextField searchField;
     private javax.swing.JMenuItem selectAllMenuItem;
     private javax.swing.JMenuItem timeDateMenuItem;
     // End of variables declaration//GEN-END:variables
