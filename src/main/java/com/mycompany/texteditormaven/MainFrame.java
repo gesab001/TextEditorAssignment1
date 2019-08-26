@@ -5,6 +5,11 @@
  */
 package com.mycompany.texteditormaven;
 
+import javax.swing.*;
+import org.fife.ui.rtextarea.*;
+import org.fife.ui.rsyntaxtextarea.*;
+
+import org.odftoolkit.simple.TextDocument;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.pdf.PdfDocument; 
 import com.itextpdf.text.pdf.PdfWriter; 
@@ -14,6 +19,7 @@ import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.FontFactory;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.Paragraph;
+import java.awt.BorderLayout;
 import java.awt.Color;
 
 import java.awt.Graphics;
@@ -91,6 +97,29 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         //Clipboard cboard = getToolkit().getSystemClipboard();
 
         initComponents();
+        cp = new JPanel(new BorderLayout());
+
+        textArea = new RSyntaxTextArea(20, 60);
+
+        textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_JAVA);
+
+        textArea.setCodeFoldingEnabled(true);
+
+        sp = new RTextScrollPane(textArea);
+
+        cp.add(sp);
+
+
+
+        setContentPane(cp);
+
+        setTitle("Text Editor");
+
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+//        pack();
+
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -291,7 +320,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
             Clipboard cboard = getToolkit().getSystemClipboard();
             Transferable paste = cboard.getContents(this);
             String sel = (String) paste.getTransferData(DataFlavor.stringFlavor);
-            jTextArea1.replaceRange(sel, jTextArea1.getSelectionStart(), jTextArea1.getSelectionEnd());
+            textArea.replaceRange(sel, textArea.getSelectionStart(), textArea.getSelectionEnd());
         }
         catch(Exception e){
             System.out.println("Paste failed");
@@ -301,77 +330,116 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
 
     private void timeDateMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeDateMenuItemActionPerformed
         //SimpleDateFormat date = new SimpleDateFormat();
-        jTextArea1.append(new Date().toString());
+        textArea.append(new Date().toString());
     }//GEN-LAST:event_timeDateMenuItemActionPerformed
+
+
+    public JFileChooser setFilters(){
+        JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
+        FileNameExtensionFilter filterpdf = new FileNameExtensionFilter(
+        "*.pdf", "pdf");
+        jfc.addChoosableFileFilter(filterpdf);
+        FileNameExtensionFilter filterjava = new FileNameExtensionFilter(
+        "*.java", "java");
+        jfc.addChoosableFileFilter(filterjava);
+                    FileNameExtensionFilter filterpython = new FileNameExtensionFilter(
+        "*.python", "python");
+        jfc.addChoosableFileFilter(filterpython);
+        FileNameExtensionFilter docxFilter = new FileNameExtensionFilter("Word files(*.docx)", "docx");
+        jfc.addChoosableFileFilter(docxFilter);
+        FileNameExtensionFilter odtFilter = new FileNameExtensionFilter("Word files(*.odt)", "odt");
+        jfc.addChoosableFileFilter(odtFilter);
+        return jfc;
+    }
+ 
+    public void setSyntaxStyle(Path path){
+        if (path.endsWith("java")){
+           textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_JAVA);
+           System.out.println("file is java");
+        }
+        if (path.endsWith("py")){
+            textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_PYTHON);
+        }
+        if (path.endsWith("cpp")){
+            textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_CPLUSPLUS);
+        }
+//        else{
+//            textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_NONE);
+//        }
+    }
+    public Path getFilePath(JFileChooser jfc) {
+        File selectedFile = jfc.getSelectedFile();
+        System.out.println(selectedFile.getAbsolutePath());
+        Path path = Paths.get(selectedFile.getAbsolutePath());
+        setSyntaxStyle(path);
+        parseFile(selectedFile, path);
+
+        return path;
+    }
+    
+    public void parseFile(File selectedFile, Path path){
+        Scanner scanner;
+        if(path.endsWith(".docx")){
+            try {       
+                InputStream is = new FileInputStream(selectedFile);
+                XWPFDocument document = new XWPFDocument(is);
+                List<XWPFParagraph> paragraphs = document.getParagraphs();
+                for (XWPFParagraph para : paragraphs) {
+                    System.out.println(para.getText());
+                    textArea.append(para.getText()+"\n");
+                }                      
+            } catch (IOException e) {
+            }
+        }
+        if(path.endsWith(".odt")){
+            try {
+                TextDocument document=(TextDocument)TextDocument.loadDocument(selectedFile);
+                String texts;
+                texts = document.getContentRoot().getTextContent();
+                System.out.print(texts);
+                textArea.append(texts);
+            } catch (Exception ex) {
+                Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }else{
+            try {
+                scanner = new Scanner(path);
+                    System.out.println("Read text file using Scanner");
+                //read line by line
+                while(scanner.hasNextLine()){
+                    //process each line
+                    String line = scanner.nextLine();
+                    System.out.println(line);
+                    textArea.append(line + "\n");
+                }
+                scanner.close();
+            } catch (IOException ex) {
+                Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+            }  
+        }
+    }
+    
 
     /* opens a file from FileChooser dialog and reads the text file and prints 
        it to the text area inside textedito window
     */
     private void openMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openMenuItemActionPerformed
-        // TODO add your handling code here
-        JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
-        FileNameExtensionFilter docxFilter = new FileNameExtensionFilter("Word files(*.docx)", "docx");
-        jfc.setFileFilter(docxFilter);
 
-          
-        jTextArea1.setWrapStyleWord(true);
-        jTextArea1.setLineWrap(true);
+        JFileChooser jfc = setFilters();
         int returnValue = jfc.showOpenDialog(null);
-        // int returnValue = jfc.showSaveDialog(null);
 
         if (returnValue == JFileChooser.APPROVE_OPTION) {
-                File selectedFile = jfc.getSelectedFile();
-                String filetype = selectedFile.toString();
-                System.out.println(selectedFile.getAbsolutePath());
-                Path path = Paths.get(selectedFile.getAbsolutePath());
-                Scanner scanner;
-                
-                if(filetype.endsWith(".docx")){
-                    try {       
-                        InputStream is = new FileInputStream(selectedFile);
-                        XWPFDocument document = new XWPFDocument(is);
-                        List<XWPFParagraph> paragraphs = document.getParagraphs();
-                        for (XWPFParagraph para : paragraphs) {
-                            System.out.println(para.getText());
-                            jTextArea1.append(para.getText()+"\n");
-                        }                      
-                    } catch (IOException e) {
-                    }
-                }
-                else{
-                    try {
-                        scanner = new Scanner(path);
-                        System.out.println("Read text file using Scanner");
-                        //read line by line
-                        while(scanner.hasNextLine()){
-                        //process each line
-                        String line = scanner.nextLine();
-                        System.out.println(line);
-                        jTextArea1.append(line + "\n");
-                    
-                }
-                scanner.close();
-                    } catch (IOException ex) {
-                        Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
-                    }
-                }
-            
-            
-                
+                Path path = getFilePath(jfc);
         }
-        
-
     }//GEN-LAST:event_openMenuItemActionPerformed
 
-    private void saveMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveMenuItemActionPerformed
-        // TODO add your handling code here:
+    public void saveDocument(String content){
         BufferedWriter bw = null;
         FileWriter fw = null;
         JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
         jfc.addChoosableFileFilter(new FileNameExtensionFilter("MS Word(.docx)", "docx"));
         int returnValue = jfc.showSaveDialog(null);
         if (returnValue == JFileChooser.APPROVE_OPTION) {
-                String content = jTextArea1.getText();
                 File selectedFile = jfc.getSelectedFile();
                 String filetype = selectedFile.toString();
                 System.out.println(selectedFile.getAbsolutePath());
@@ -380,7 +448,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
                     try {
                         FileOutputStream fos = new FileOutputStream(selectedFile);
                         XWPFDocument doc = new XWPFDocument();
-                        for (String line : jTextArea1.getText().split("\\n")) {
+                        for (String line : textArea.getText().split("\\n")) {
                             doc.createParagraph().createRun().setText(line);
                         }                     
                         doc.write(fos);
@@ -413,12 +481,21 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
           
                 }
         }
+    }
+    
+    private void saveMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveMenuItemActionPerformed
+        // TODO add your handling code here:
+        String content = textArea.getText();
+        saveDocument(content);
     }//GEN-LAST:event_saveMenuItemActionPerformed
 
+    public String getTextArea(){
+        return textArea.getText();
+    }
     private void printMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_printMenuItemActionPerformed
         // TODO add your handling code here:
         PrinterJob pj = PrinterJob.getPrinterJob();
-        pj.setPrintable(jTextArea1.getPrintable(null, null));
+        pj.setPrintable(textArea.getPrintable(null, null));
         if (pj.printDialog()) {
             try {pj.print();}
             catch (PrinterException exc) {
@@ -439,7 +516,7 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
         int returnValue = jfc.showSaveDialog(null);
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             try {
-                String content = jTextArea1.getText();
+                String content = textArea.getText();
 
                 File selectedFile = jfc.getSelectedFile();
                 String filename = selectedFile.getAbsolutePath().toString() + ".pdf";
@@ -465,39 +542,43 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
 
     private void CopyMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CopyMenuItemActionPerformed
         Clipboard cboard = getToolkit().getSystemClipboard();
-        String copyTxt = jTextArea1.getSelectedText();
+        String copyTxt = textArea.getSelectedText();
         StringSelection cselect = new StringSelection(copyTxt);
         cboard.setContents(cselect, cselect);
         
     }//GEN-LAST:event_CopyMenuItemActionPerformed
 
     private void cutMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cutMenuItemActionPerformed
-        String cuString = jTextArea1.getSelectedText();
+        String cuString = textArea.getSelectedText();
         StringSelection cutselection = new StringSelection(cuString);
         Clipboard cboard = getToolkit().getSystemClipboard();
         cboard.setContents(cutselection, cutselection);
-        jTextArea1.replaceRange("", jTextArea1.getSelectionStart(), jTextArea1.getSelectionEnd());
+        textArea.replaceRange("", textArea.getSelectionStart(), textArea.getSelectionEnd());
         
     }//GEN-LAST:event_cutMenuItemActionPerformed
 
     private void selectAllMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectAllMenuItemActionPerformed
         //Clipboard cboard = getToolkit().getSystemClipboard();
-        //cboard.getContents(jTextArea1.getText());
-        jTextArea1.selectAll();
+        //cboard.getContents(textArea.getText());
+        textArea.selectAll();
     }//GEN-LAST:event_selectAllMenuItemActionPerformed
 
     private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
         JOptionPane.showMessageDialog(this, "Copyright (c) 2019 , Giovanni Saberon, Adam Petherick\nAll rights reserved. \nRedistribution and use in source and binary forms, with or \nwithout modification, are permitted provided that the \nfollowing conditions are met: \n1. Redistributions of source code must retain the above \n copyright notice, this list of conditions and the following \ndisclaimer.\n2. Redistributions in binary form must reproduce the above \ncopyright notice, this list of conditions and the following \ndisclaimer in the documentation and/or other materials \nprovided with the distribution. ");
     }//GEN-LAST:event_jMenuItem12ActionPerformed
 
-    private void findMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_findMenuItemActionPerformed
-
+    public void search(){
         JTextField searchInput = new JTextField();
         int option = JOptionPane.showConfirmDialog(null, searchInput, "Word Search", JOptionPane.OK_CANCEL_OPTION);
         if (option == JOptionPane.OK_OPTION) {
-            searchArea(jTextArea1, searchInput.getText());
+            searchArea(textArea, searchInput.getText());
             System.out.println(searchInput.getText());
         }
+    }
+    
+    private void findMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_findMenuItemActionPerformed
+        search();
+   
     }//GEN-LAST:event_findMenuItemActionPerformed
     
     class YellowHighlighter extends DefaultHighlighter.DefaultHighlightPainter{
@@ -600,7 +681,10 @@ public class MainFrame extends javax.swing.JFrame implements Printable {
     private javax.swing.JMenuItem selectAllMenuItem;
     private javax.swing.JMenuItem timeDateMenuItem;
     // End of variables declaration//GEN-END:variables
-
+    private RSyntaxTextArea textArea;
+    private javax.swing.JPanel cp;
+    private RTextScrollPane sp;
+    
     @Override
     public int print(Graphics grphcs, PageFormat pf, int i) throws PrinterException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
