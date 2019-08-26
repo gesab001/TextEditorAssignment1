@@ -1,0 +1,1094 @@
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:6:	ExcessiveImports: A high number of imports can indicate a high degree of coupling within an object.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:6:	ExcessiveImports: A high number of imports can indicate a high degree of coupling within an object.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:14:	UnusedImports: Avoid unused imports such as 'com.itextpdf.text.pdf.PdfDocument'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:14:	UnusedImports: Avoid unused imports such as 'com.itextpdf.text.pdf.PdfDocument'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:17:	UnusedImports: Avoid unused imports such as 'com.itextpdf.text.Chunk'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:17:	UnusedImports: Avoid unused imports such as 'com.itextpdf.text.Chunk'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:26:	UnusedImports: Avoid unused imports such as 'java.awt.GridLayout'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:26:	UnusedImports: Avoid unused imports such as 'java.awt.GridLayout'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:27:	UnusedImports: Avoid unused imports such as 'java.awt.TextArea'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:27:	UnusedImports: Avoid unused imports such as 'java.awt.TextArea'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:37:	DuplicateImports: Avoid duplicate imports such as 'javax.swing.JFileChooser'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:37:	DuplicateImports: Avoid duplicate imports such as 'javax.swing.JFileChooser'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:39:	UnusedImports: Avoid unused imports such as 'javax.swing.filechooser.FileFilter'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:39:	UnusedImports: Avoid unused imports such as 'javax.swing.filechooser.FileFilter'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:45:	UnusedImports: Avoid unused imports such as 'java.io.BufferedReader'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:45:	UnusedImports: Avoid unused imports such as 'java.io.BufferedReader'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:47:	DuplicateImports: Avoid duplicate imports such as 'java.io.File'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:47:	DuplicateImports: Avoid duplicate imports such as 'java.io.File'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:51:	UnusedImports: Avoid unused imports such as 'java.io.FileReader'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:51:	UnusedImports: Avoid unused imports such as 'java.io.FileReader'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:55:	UnusedImports: Avoid unused imports such as 'java.io.InputStreamReader'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:55:	UnusedImports: Avoid unused imports such as 'java.io.InputStreamReader'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:56:	UnusedImports: Avoid unused imports such as 'java.nio.charset.Charset'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:56:	UnusedImports: Avoid unused imports such as 'java.nio.charset.Charset'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:57:	UnusedImports: Avoid unused imports such as 'java.nio.charset.StandardCharsets'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:57:	UnusedImports: Avoid unused imports such as 'java.nio.charset.StandardCharsets'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:58:	UnusedImports: Avoid unused imports such as 'java.nio.file.Files'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:58:	UnusedImports: Avoid unused imports such as 'java.nio.file.Files'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:61:	UnusedImports: Avoid unused imports such as 'java.text.SimpleDateFormat'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:61:	UnusedImports: Avoid unused imports such as 'java.text.SimpleDateFormat'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:62:	UnusedImports: Avoid unused imports such as 'java.util.ArrayList'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:62:	UnusedImports: Avoid unused imports such as 'java.util.ArrayList'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:63:	UnusedImports: Avoid unused imports such as 'java.util.Arrays'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:63:	UnusedImports: Avoid unused imports such as 'java.util.Arrays'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:69:	DuplicateImports: Avoid duplicate imports such as 'javax.swing.JOptionPane'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:69:	DuplicateImports: Avoid duplicate imports such as 'javax.swing.JOptionPane'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:70:	DuplicateImports: Avoid duplicate imports such as 'javax.swing.JPanel'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:70:	DuplicateImports: Avoid duplicate imports such as 'javax.swing.JPanel'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:71:	DuplicateImports: Avoid duplicate imports such as 'javax.swing.JTextField'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:71:	DuplicateImports: Avoid duplicate imports such as 'javax.swing.JTextField'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:77:	UnusedImports: Avoid unused imports such as 'javax.swing.text.rtf.RTFEditorKit'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:77:	UnusedImports: Avoid unused imports such as 'javax.swing.text.rtf.RTFEditorKit'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:80:	UnusedImports: Avoid unused imports such as 'org.apache.poi.xwpf.usermodel.XWPFRun'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:80:	UnusedImports: Avoid unused imports such as 'org.apache.poi.xwpf.usermodel.XWPFRun'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:89:	GodClass: Possible God Class (WMC=60, ATFD=91, TCC=22.222%)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:89:	GodClass: Possible God Class (WMC=60, ATFD=91, TCC=22.222%)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:89:	MissingSerialVersionUID: Classes implementing Serializable should set a serialVersionUID
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:89:	MissingSerialVersionUID: Classes implementing Serializable should set a serialVersionUID
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:89:	ModifiedCyclomaticComplexity: The class 'MainFrame' has a Modified Cyclomatic Complexity of 3 (Highest = 14).
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:89:	ModifiedCyclomaticComplexity: The class 'MainFrame' has a Modified Cyclomatic Complexity of 3 (Highest = 14).
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:89:	StdCyclomaticComplexity: The class 'MainFrame' has a Standard Cyclomatic Complexity of 3 (Highest = 14).
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:89:	StdCyclomaticComplexity: The class 'MainFrame' has a Standard Cyclomatic Complexity of 3 (Highest = 14).
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:89:	TooManyFields: Too many fields
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:89:	TooManyFields: Too many fields
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:89:	TooManyMethods: This class has too many methods, consider refactoring it.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:89:	TooManyMethods: This class has too many methods, consider refactoring it.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:89:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JFrame' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:89:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JFrame' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:91:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:91:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:91:	FieldNamingConventions: The field name 'm_doc' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:91:	FieldNamingConventions: The field name 'm_doc' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:91:	VariableNamingConventions: Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'm_doc' is not final.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:91:	VariableNamingConventions: Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'm_doc' is not final.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:92:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the m_context field if you want a default access modifier
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:92:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the m_context field if you want a default access modifier
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:92:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:92:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:92:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:92:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:92:	FieldNamingConventions: The field name 'm_context' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:92:	FieldNamingConventions: The field name 'm_context' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:92:	VariableNamingConventions: Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'm_context' is not final.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:92:	VariableNamingConventions: Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'm_context' is not final.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:96:	CallSuperInConstructor: It is a good practice to call super() in a constructor
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:96:	CallSuperInConstructor: It is a good practice to call super() in a constructor
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:131:	CommentSize: Comment is too large: Line too long
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:131:	CommentSize: Comment is too large: Line too long
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:132:	ExcessiveMethodLength: Avoid really long methods.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:132:	ExcessiveMethodLength: Avoid really long methods.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:132:	ModifiedCyclomaticComplexity: The method 'initComponents' has a Modified Cyclomatic Complexity of 14.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:132:	ModifiedCyclomaticComplexity: The method 'initComponents' has a Modified Cyclomatic Complexity of 14.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:132:	NcssCount: The method 'initComponents()' has a NCSS line count of 91.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:132:	NcssCount: The method 'initComponents()' has a NCSS line count of 91.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:132:	StdCyclomaticComplexity: The method 'initComponents' has a Standard Cyclomatic Complexity of 14.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:132:	StdCyclomaticComplexity: The method 'initComponents' has a Standard Cyclomatic Complexity of 14.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:134:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JFileChooser' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:134:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JFileChooser' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:135:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JScrollPane' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:135:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JScrollPane' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:136:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JTextArea' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:136:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JTextArea' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:137:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuBar' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:137:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuBar' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:138:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenu' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:138:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenu' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:139:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:139:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:140:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:140:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:141:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:141:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:143:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:143:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:144:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:144:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:145:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:145:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:146:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenu' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:146:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenu' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:147:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:147:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:148:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenu' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:148:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenu' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:149:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:149:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:150:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:150:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:151:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:151:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:152:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:152:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:153:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:153:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:154:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenu' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:154:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenu' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:155:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:155:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:165:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:165:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:168:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:168:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:168:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:168:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:168:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:168:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:169:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:169:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:174:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:174:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:177:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:177:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:177:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:177:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:177:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:177:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:178:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:178:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:183:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:183:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:186:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:186:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:186:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:186:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:186:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:186:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:187:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:187:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:193:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:193:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:196:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:196:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:196:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:196:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:196:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:196:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:197:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:197:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:204:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:204:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:204:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:204:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:204:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:204:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:205:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:205:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:212:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:212:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:212:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:212:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:212:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:212:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:213:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:213:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:222:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:222:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:225:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:225:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:225:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:225:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:225:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:225:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:226:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:226:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:235:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:235:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:238:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:238:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:238:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:238:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:238:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:238:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:239:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:239:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:244:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:244:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:247:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:247:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:247:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:247:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:247:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:247:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:248:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:248:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:253:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:253:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:256:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:256:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:256:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:256:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:256:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:256:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:257:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:257:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:262:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:262:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:265:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:265:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:265:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:265:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:265:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:265:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:266:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:266:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:271:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:271:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:274:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:274:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:274:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:274:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:274:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:274:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:275:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:275:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:286:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:286:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:286:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:286:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:286:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:286:	MissingOverride: The method 'actionPerformed(java.awt.event.ActionEvent)' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:287:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:287:	AccessorMethodGeneration: Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:296:	LocalVariableCouldBeFinal: Local variable 'layout' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:296:	LocalVariableCouldBeFinal: Local variable 'layout' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:296:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.GroupLayout' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:296:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.GroupLayout' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:296:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.GroupLayout' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:296:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.GroupLayout' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:297:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:297:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:298:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:298:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:299:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:299:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:302:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:302:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:303:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:303:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:311:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:311:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:311:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:311:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:318:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:318:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:318:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:318:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:320:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:320:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:320:	LocalVariableCouldBeFinal: Local variable 'cboard' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:320:	LocalVariableCouldBeFinal: Local variable 'cboard' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:321:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:321:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:321:	LocalVariableCouldBeFinal: Local variable 'paste' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:321:	LocalVariableCouldBeFinal: Local variable 'paste' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:322:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:322:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:322:	LocalVariableCouldBeFinal: Local variable 'sel' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:322:	LocalVariableCouldBeFinal: Local variable 'sel' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:325:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:325:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:326:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:326:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:331:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:331:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:331:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:331:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:337:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:337:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:337:	LinguisticNaming: Linguistics Antipattern - The setter 'setFilters' should not return any type except void linguistically
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:337:	LinguisticNaming: Linguistics Antipattern - The setter 'setFilters' should not return any type except void linguistically
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:338:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:338:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:338:	LocalVariableCouldBeFinal: Local variable 'jfc' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:338:	LocalVariableCouldBeFinal: Local variable 'jfc' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:339:	LocalVariableCouldBeFinal: Local variable 'filterpdf' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:339:	LocalVariableCouldBeFinal: Local variable 'filterpdf' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:342:	LocalVariableCouldBeFinal: Local variable 'filterjava' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:342:	LocalVariableCouldBeFinal: Local variable 'filterjava' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:345:	LocalVariableCouldBeFinal: Local variable 'filterpython' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:345:	LocalVariableCouldBeFinal: Local variable 'filterpython' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:348:	LocalVariableCouldBeFinal: Local variable 'docxFilter' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:348:	LocalVariableCouldBeFinal: Local variable 'docxFilter' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:350:	LocalVariableCouldBeFinal: Local variable 'odtFilter' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:350:	LocalVariableCouldBeFinal: Local variable 'odtFilter' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:355:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:355:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:355:	MethodArgumentCouldBeFinal: Parameter 'path' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:355:	MethodArgumentCouldBeFinal: Parameter 'path' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:358:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:358:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:370:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:370:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:370:	MethodArgumentCouldBeFinal: Parameter 'jfc' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:370:	MethodArgumentCouldBeFinal: Parameter 'jfc' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:371:	LocalVariableCouldBeFinal: Local variable 'selectedFile' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:371:	LocalVariableCouldBeFinal: Local variable 'selectedFile' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:372:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:372:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:372:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:372:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:373:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:373:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:373:	LocalVariableCouldBeFinal: Local variable 'path' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:373:	LocalVariableCouldBeFinal: Local variable 'path' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:380:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:380:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:380:	DataflowAnomalyAnalysis: Found 'UR'-anomaly for variable 'para' (lines '380'-'388').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:380:	DataflowAnomalyAnalysis: Found 'UR'-anomaly for variable 'para' (lines '380'-'388').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:380:	MethodArgumentCouldBeFinal: Parameter 'path' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:380:	MethodArgumentCouldBeFinal: Parameter 'path' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:380:	MethodArgumentCouldBeFinal: Parameter 'selectedFile' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:380:	MethodArgumentCouldBeFinal: Parameter 'selectedFile' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:381:	CloseResource: Ensure that resources like this Scanner object are closed after use
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:381:	CloseResource: Ensure that resources like this Scanner object are closed after use
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:384:	AvoidFileStream: Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:384:	AvoidFileStream: Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:384:	CloseResource: Ensure that resources like this FileInputStream object are closed after use
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:384:	CloseResource: Ensure that resources like this FileInputStream object are closed after use
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:384:	LocalVariableCouldBeFinal: Local variable 'is' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:384:	LocalVariableCouldBeFinal: Local variable 'is' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:384:	ShortVariable: Avoid variables with short names like is
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:384:	ShortVariable: Avoid variables with short names like is
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:385:	LocalVariableCouldBeFinal: Local variable 'document' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:385:	LocalVariableCouldBeFinal: Local variable 'document' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:386:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:386:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:386:	LocalVariableCouldBeFinal: Local variable 'paragraphs' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:386:	LocalVariableCouldBeFinal: Local variable 'paragraphs' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:387:	LocalVariableCouldBeFinal: Local variable 'para' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:387:	LocalVariableCouldBeFinal: Local variable 'para' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:388:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:388:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:391:	EmptyCatchBlock: Avoid empty catch blocks
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:391:	EmptyCatchBlock: Avoid empty catch blocks
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:396:	CloseResource: Ensure that resources like this TextDocument object are closed after use
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:396:	CloseResource: Ensure that resources like this TextDocument object are closed after use
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:396:	LocalVariableCouldBeFinal: Local variable 'document' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:396:	LocalVariableCouldBeFinal: Local variable 'document' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:398:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:398:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:398:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:398:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:399:	SystemPrintln: System.out.print is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:399:	SystemPrintln: System.out.print is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:401:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:401:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:402:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:402:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:402:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:402:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:402:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:402:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:407:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:407:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:411:	LocalVariableCouldBeFinal: Local variable 'line' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:411:	LocalVariableCouldBeFinal: Local variable 'line' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:412:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:412:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:417:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:417:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:417:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:417:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:417:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:417:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:426:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:426:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:426:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:426:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:428:	LocalVariableCouldBeFinal: Local variable 'jfc' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:428:	LocalVariableCouldBeFinal: Local variable 'jfc' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:429:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:429:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:429:	LocalVariableCouldBeFinal: Local variable 'returnValue' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:429:	LocalVariableCouldBeFinal: Local variable 'returnValue' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:432:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'path' (lines '432'-'434').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:432:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'path' (lines '432'-'434').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:432:	LocalVariableCouldBeFinal: Local variable 'path' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:432:	LocalVariableCouldBeFinal: Local variable 'path' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:432:	UnusedLocalVariable: Avoid unused local variables such as 'path'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:432:	UnusedLocalVariable: Avoid unused local variables such as 'path'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:436:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:436:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:436:	DataflowAnomalyAnalysis: Found 'UR'-anomaly for variable 'line' (lines '436'-'452').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:436:	DataflowAnomalyAnalysis: Found 'UR'-anomaly for variable 'line' (lines '436'-'452').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:436:	MethodArgumentCouldBeFinal: Parameter 'content' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:436:	MethodArgumentCouldBeFinal: Parameter 'content' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:437:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'bw' (lines '437'-'466').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:437:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'bw' (lines '437'-'466').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:437:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'bw' (lines '437'-'484').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:437:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'bw' (lines '437'-'484').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:437:	ShortVariable: Avoid variables with short names like bw
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:437:	ShortVariable: Avoid variables with short names like bw
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:438:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'fw' (lines '438'-'465').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:438:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'fw' (lines '438'-'465').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:438:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'fw' (lines '438'-'484').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:438:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'fw' (lines '438'-'484').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:438:	ShortVariable: Avoid variables with short names like fw
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:438:	ShortVariable: Avoid variables with short names like fw
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:439:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:439:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:439:	LocalVariableCouldBeFinal: Local variable 'jfc' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:439:	LocalVariableCouldBeFinal: Local variable 'jfc' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:441:	LocalVariableCouldBeFinal: Local variable 'returnValue' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:441:	LocalVariableCouldBeFinal: Local variable 'returnValue' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:443:	LocalVariableCouldBeFinal: Local variable 'selectedFile' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:443:	LocalVariableCouldBeFinal: Local variable 'selectedFile' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:444:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:444:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:444:	LocalVariableCouldBeFinal: Local variable 'filetype' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:444:	LocalVariableCouldBeFinal: Local variable 'filetype' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:445:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:445:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:445:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:445:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:447:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:447:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:449:	AvoidFileStream: Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:449:	AvoidFileStream: Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:449:	CloseResource: Ensure that resources like this FileOutputStream object are closed after use
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:449:	CloseResource: Ensure that resources like this FileOutputStream object are closed after use
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:449:	LocalVariableCouldBeFinal: Local variable 'fos' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:449:	LocalVariableCouldBeFinal: Local variable 'fos' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:450:	LocalVariableCouldBeFinal: Local variable 'doc' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:450:	LocalVariableCouldBeFinal: Local variable 'doc' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:451:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:451:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:451:	LocalVariableCouldBeFinal: Local variable 'line' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:451:	LocalVariableCouldBeFinal: Local variable 'line' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:452:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:452:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:452:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:452:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:457:	EmptyCatchBlock: Avoid empty catch blocks
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:457:	EmptyCatchBlock: Avoid empty catch blocks
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:465:	AvoidFileStream: Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:465:	AvoidFileStream: Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:465:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:465:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:472:	IfStmtsMustUseBraces: Avoid using if statements without curly braces
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:472:	IfStmtsMustUseBraces: Avoid using if statements without curly braces
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:473:	ControlStatementBraces: This statement should have braces
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:473:	ControlStatementBraces: This statement should have braces
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:475:	IfStmtsMustUseBraces: Avoid using if statements without curly braces
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:475:	IfStmtsMustUseBraces: Avoid using if statements without curly braces
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:476:	ControlStatementBraces: This statement should have braces
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:476:	ControlStatementBraces: This statement should have braces
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:486:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:486:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:486:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:486:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:488:	LocalVariableCouldBeFinal: Local variable 'content' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:488:	LocalVariableCouldBeFinal: Local variable 'content' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:495:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:495:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:495:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:495:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:497:	LocalVariableCouldBeFinal: Local variable 'pj' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:497:	LocalVariableCouldBeFinal: Local variable 'pj' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:497:	ShortVariable: Avoid variables with short names like pj
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:497:	ShortVariable: Avoid variables with short names like pj
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:498:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:498:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:499:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:499:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:502:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:502:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:507:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:507:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:507:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:507:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:510:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'document' (lines '510'-'537').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:510:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'document' (lines '510'-'537').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:510:	LocalVariableCouldBeFinal: Local variable 'document' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:510:	LocalVariableCouldBeFinal: Local variable 'document' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:512:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:512:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:512:	LocalVariableCouldBeFinal: Local variable 'jfc' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:512:	LocalVariableCouldBeFinal: Local variable 'jfc' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:513:	LocalVariableCouldBeFinal: Local variable 'filter' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:513:	LocalVariableCouldBeFinal: Local variable 'filter' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:516:	LocalVariableCouldBeFinal: Local variable 'returnValue' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:516:	LocalVariableCouldBeFinal: Local variable 'returnValue' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:519:	LocalVariableCouldBeFinal: Local variable 'content' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:519:	LocalVariableCouldBeFinal: Local variable 'content' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:521:	LocalVariableCouldBeFinal: Local variable 'selectedFile' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:521:	LocalVariableCouldBeFinal: Local variable 'selectedFile' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:522:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:522:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:522:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:522:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:522:	LocalVariableCouldBeFinal: Local variable 'filename' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:522:	LocalVariableCouldBeFinal: Local variable 'filename' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:523:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:523:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:524:	AvoidFileStream: Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:524:	AvoidFileStream: Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:526:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'font' (lines '526'-'537').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:526:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'font' (lines '526'-'537').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:526:	LocalVariableCouldBeFinal: Local variable 'font' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:526:	LocalVariableCouldBeFinal: Local variable 'font' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:526:	UnusedLocalVariable: Avoid unused local variables such as 'font'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:526:	UnusedLocalVariable: Avoid unused local variables such as 'font'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:529:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:529:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:532:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:532:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:532:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:532:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:532:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:532:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:533:	IdenticalCatchBranches: 'catch' branch identical to 'FileNotFoundException' branch
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:533:	IdenticalCatchBranches: 'catch' branch identical to 'FileNotFoundException' branch
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:534:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:534:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:534:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:534:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:534:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:534:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:539:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:539:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:539:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:539:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:540:	DoNotCallSystemExit: System.exit() should not be used in J2EE/JEE apps
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:540:	DoNotCallSystemExit: System.exit() should not be used in J2EE/JEE apps
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:543:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:543:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:543:	MethodNamingConventions: The instance method name 'CopyMenuItemActionPerformed' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:543:	MethodNamingConventions: The instance method name 'CopyMenuItemActionPerformed' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:543:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:543:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:544:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:544:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:544:	LocalVariableCouldBeFinal: Local variable 'cboard' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:544:	LocalVariableCouldBeFinal: Local variable 'cboard' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:545:	LocalVariableCouldBeFinal: Local variable 'copyTxt' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:545:	LocalVariableCouldBeFinal: Local variable 'copyTxt' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:546:	LocalVariableCouldBeFinal: Local variable 'cselect' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:546:	LocalVariableCouldBeFinal: Local variable 'cselect' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:547:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:547:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:551:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:551:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:551:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:551:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:552:	LocalVariableCouldBeFinal: Local variable 'cuString' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:552:	LocalVariableCouldBeFinal: Local variable 'cuString' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:553:	LocalVariableCouldBeFinal: Local variable 'cutselection' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:553:	LocalVariableCouldBeFinal: Local variable 'cutselection' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:554:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:554:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:554:	LocalVariableCouldBeFinal: Local variable 'cboard' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:554:	LocalVariableCouldBeFinal: Local variable 'cboard' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:555:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:555:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:560:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:560:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:560:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:560:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:566:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:566:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:566:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:566:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:570:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:570:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:571:	LocalVariableCouldBeFinal: Local variable 'searchInput' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:571:	LocalVariableCouldBeFinal: Local variable 'searchInput' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:572:	LocalVariableCouldBeFinal: Local variable 'option' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:572:	LocalVariableCouldBeFinal: Local variable 'option' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:575:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:575:	SystemPrintln: System.out.println is used
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:579:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:579:	MethodArgumentCouldBeFinal: Parameter 'evt' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:579:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:579:	UnusedFormalParameter: Avoid unused method parameters such as 'evt'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:584:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the YellowHighlighter nested class if you want a default access modifier
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:584:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the YellowHighlighter nested class if you want a default access modifier
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:584:	CommentRequired: Header comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:584:	CommentRequired: Header comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:586:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:586:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:586:	MethodArgumentCouldBeFinal: Parameter 'c' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:586:	MethodArgumentCouldBeFinal: Parameter 'c' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:586:	ShortVariable: Avoid variables with short names like c
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:586:	ShortVariable: Avoid variables with short names like c
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:592:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:592:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:592:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the highlight field if you want a default access modifier
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:592:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the highlight field if you want a default access modifier
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:592:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:592:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:592:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:592:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:592:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:592:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:594:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:594:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:594:	MethodArgumentCouldBeFinal: Parameter 'textComponent' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:594:	MethodArgumentCouldBeFinal: Parameter 'textComponent' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:595:	LocalVariableCouldBeFinal: Local variable 'removehlight' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:595:	LocalVariableCouldBeFinal: Local variable 'removehlight' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:596:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:596:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:596:	LocalVariableCouldBeFinal: Local variable 'remove' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:596:	LocalVariableCouldBeFinal: Local variable 'remove' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:598:	ForLoopCanBeForeach: This for loop can be replaced by a foreach loop
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:598:	ForLoopCanBeForeach: This for loop can be replaced by a foreach loop
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:599:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:599:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:599:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:599:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:600:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:600:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:604:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:604:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:604:	MethodArgumentCouldBeFinal: Parameter 'textComp' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:604:	MethodArgumentCouldBeFinal: Parameter 'textComp' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:604:	MethodArgumentCouldBeFinal: Parameter 'tstring' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:604:	MethodArgumentCouldBeFinal: Parameter 'tstring' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:607:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'hlight' (lines '607'-'624').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:607:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'hlight' (lines '607'-'624').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:607:	LocalVariableCouldBeFinal: Local variable 'hlight' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:607:	LocalVariableCouldBeFinal: Local variable 'hlight' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:608:	LocalVariableCouldBeFinal: Local variable 'doc' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:608:	LocalVariableCouldBeFinal: Local variable 'doc' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:609:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:609:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:609:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:609:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:609:	LocalVariableCouldBeFinal: Local variable 'text' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:609:	LocalVariableCouldBeFinal: Local variable 'text' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:613:	AssignmentInOperand: Avoid assignments in operands
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:613:	AssignmentInOperand: Avoid assignments in operands
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:613:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'pos' (lines '613'-'624').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:613:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'pos' (lines '613'-'624').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:613:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:613:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:613:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:613:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:613:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:613:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:613:	UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:613:	UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:613:	UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:613:	UseLocaleWithCaseConversions: When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:614:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:614:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:620:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:620:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:620:	EmptyCatchBlock: Avoid empty catch blocks
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:620:	EmptyCatchBlock: Avoid empty catch blocks
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:628:	DataflowAnomalyAnalysis: Found 'UR'-anomaly for variable 'info' (lines '628'-'636').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:628:	DataflowAnomalyAnalysis: Found 'UR'-anomaly for variable 'info' (lines '628'-'636').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:628:	DataflowAnomalyAnalysis: Found 'UR'-anomaly for variable 'info' (lines '628'-'636').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:628:	DataflowAnomalyAnalysis: Found 'UR'-anomaly for variable 'info' (lines '628'-'636').
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:628:	MethodArgumentCouldBeFinal: Parameter 'args' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:628:	MethodArgumentCouldBeFinal: Parameter 'args' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:630:	CommentSize: Comment is too large: Line too long
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:630:	CommentSize: Comment is too large: Line too long
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:631:	CommentSize: Comment is too large: Line too long
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:631:	CommentSize: Comment is too large: Line too long
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:632:	CommentSize: Comment is too large: Line too long
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:632:	CommentSize: Comment is too large: Line too long
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:635:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:635:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:635:	LocalVariableCouldBeFinal: Local variable 'info' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:635:	LocalVariableCouldBeFinal: Local variable 'info' could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:637:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:637:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:642:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:642:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:642:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:642:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:642:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:642:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:642:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:642:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:642:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.util.logging.Level.SEVERE' due to existing import 'java.util.logging.Level'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:642:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.util.logging.Level.SEVERE' due to existing import 'java.util.logging.Level'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:642:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.util.logging.Logger.getLogger' due to existing import 'java.util.logging.Logger'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:642:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.util.logging.Logger.getLogger' due to existing import 'java.util.logging.Logger'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:643:	IdenticalCatchBranches: 'catch' branch identical to 'ClassNotFoundException' branch
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:643:	IdenticalCatchBranches: 'catch' branch identical to 'ClassNotFoundException' branch
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:644:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:644:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:644:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:644:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:644:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:644:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:644:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:644:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:644:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.util.logging.Level.SEVERE' due to existing import 'java.util.logging.Level'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:644:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.util.logging.Level.SEVERE' due to existing import 'java.util.logging.Level'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:644:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.util.logging.Logger.getLogger' due to existing import 'java.util.logging.Logger'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:644:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.util.logging.Logger.getLogger' due to existing import 'java.util.logging.Logger'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:645:	IdenticalCatchBranches: 'catch' branch identical to 'ClassNotFoundException' branch
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:645:	IdenticalCatchBranches: 'catch' branch identical to 'ClassNotFoundException' branch
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:646:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:646:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:646:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:646:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:646:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:646:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:646:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:646:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:646:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.util.logging.Level.SEVERE' due to existing import 'java.util.logging.Level'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:646:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.util.logging.Level.SEVERE' due to existing import 'java.util.logging.Level'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:646:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.util.logging.Logger.getLogger' due to existing import 'java.util.logging.Logger'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:646:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.util.logging.Logger.getLogger' due to existing import 'java.util.logging.Logger'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:647:	IdenticalCatchBranches: 'catch' branch identical to 'ClassNotFoundException' branch
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:647:	IdenticalCatchBranches: 'catch' branch identical to 'ClassNotFoundException' branch
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:647:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.UnsupportedLookAndFeelException' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:647:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.UnsupportedLookAndFeelException' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:648:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:648:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:648:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:648:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:648:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:648:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:648:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:648:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:648:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.util.logging.Level.SEVERE' due to existing import 'java.util.logging.Level'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:648:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.util.logging.Level.SEVERE' due to existing import 'java.util.logging.Level'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:648:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.util.logging.Logger.getLogger' due to existing import 'java.util.logging.Logger'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:648:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'java.util.logging.Logger.getLogger' due to existing import 'java.util.logging.Logger'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:653:	DoNotUseThreads: To be compliant to J2EE, a webapp should not use any thread.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:653:	DoNotUseThreads: To be compliant to J2EE, a webapp should not use any thread.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:654:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:654:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:654:	MissingOverride: The method 'run()' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:654:	MissingOverride: The method 'run()' is missing an @Override annotation.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:661:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:661:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:661:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:661:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:661:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:661:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:661:	FieldNamingConventions: The field name 'CopyMenuItem' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:661:	FieldNamingConventions: The field name 'CopyMenuItem' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:661:	SingularField: Perhaps 'CopyMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:661:	SingularField: Perhaps 'CopyMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:661:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:661:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:661:	VariableNamingConventions: Variables should start with a lowercase character, 'CopyMenuItem' starts with uppercase character.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:661:	VariableNamingConventions: Variables should start with a lowercase character, 'CopyMenuItem' starts with uppercase character.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:662:	AvoidFieldNameMatchingMethodName: Field Search has the same name as a method
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:662:	AvoidFieldNameMatchingMethodName: Field Search has the same name as a method
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:662:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:662:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:662:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:662:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:662:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:662:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:662:	FieldNamingConventions: The field name 'Search' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:662:	FieldNamingConventions: The field name 'Search' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:662:	SingularField: Perhaps 'Search' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:662:	SingularField: Perhaps 'Search' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:662:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenu' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:662:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenu' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:662:	VariableNamingConventions: Variables should start with a lowercase character, 'Search' starts with uppercase character.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:662:	VariableNamingConventions: Variables should start with a lowercase character, 'Search' starts with uppercase character.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:663:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:663:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:663:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:663:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:663:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:663:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:663:	SingularField: Perhaps 'cutMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:663:	SingularField: Perhaps 'cutMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:663:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:663:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:664:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:664:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:664:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:664:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:664:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:664:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:664:	SingularField: Perhaps 'findMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:664:	SingularField: Perhaps 'findMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:664:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:664:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:665:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:665:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:665:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:665:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:665:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:665:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:665:	SingularField: Perhaps 'jFileChooser1' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:665:	SingularField: Perhaps 'jFileChooser1' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:665:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JFileChooser' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:665:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JFileChooser' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:665:	UnusedPrivateField: Avoid unused private fields such as 'jFileChooser1'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:665:	UnusedPrivateField: Avoid unused private fields such as 'jFileChooser1'.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:666:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:666:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:666:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:666:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:666:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:666:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:666:	SingularField: Perhaps 'jMenu1' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:666:	SingularField: Perhaps 'jMenu1' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:666:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenu' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:666:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenu' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:667:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:667:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:667:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:667:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:667:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:667:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:667:	SingularField: Perhaps 'jMenu3' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:667:	SingularField: Perhaps 'jMenu3' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:667:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenu' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:667:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenu' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:668:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:668:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:668:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:668:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:668:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:668:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:668:	SingularField: Perhaps 'jMenu4' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:668:	SingularField: Perhaps 'jMenu4' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:668:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenu' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:668:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenu' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:669:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:669:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:669:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:669:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:669:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:669:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:669:	SingularField: Perhaps 'jMenuBar1' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:669:	SingularField: Perhaps 'jMenuBar1' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:669:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuBar' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:669:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuBar' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:670:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:670:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:670:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:670:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:670:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:670:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:670:	SingularField: Perhaps 'jMenuItem12' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:670:	SingularField: Perhaps 'jMenuItem12' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:670:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:670:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:671:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:671:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:671:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:671:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:671:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:671:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:671:	SingularField: Perhaps 'jMenuItem4' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:671:	SingularField: Perhaps 'jMenuItem4' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:671:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:671:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:672:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:672:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:672:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:672:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:672:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:672:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:672:	SingularField: Perhaps 'jScrollPane1' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:672:	SingularField: Perhaps 'jScrollPane1' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:672:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JScrollPane' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:672:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JScrollPane' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:673:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:673:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:673:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:673:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:673:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:673:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:673:	SingularField: Perhaps 'jSeparator1' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:673:	SingularField: Perhaps 'jSeparator1' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:674:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:674:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:674:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:674:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:674:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:674:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:674:	SingularField: Perhaps 'jTextArea1' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:674:	SingularField: Perhaps 'jTextArea1' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:674:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JTextArea' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:674:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JTextArea' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:675:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:675:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:675:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:675:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:675:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:675:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:675:	SingularField: Perhaps 'newMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:675:	SingularField: Perhaps 'newMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:675:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:675:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:676:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:676:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:676:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:676:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:676:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:676:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:676:	SingularField: Perhaps 'openMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:676:	SingularField: Perhaps 'openMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:676:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:676:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:677:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:677:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:677:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:677:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:677:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:677:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:677:	SingularField: Perhaps 'pasteMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:677:	SingularField: Perhaps 'pasteMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:677:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:677:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:678:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:678:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:678:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:678:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:678:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:678:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:678:	SingularField: Perhaps 'pdfExportMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:678:	SingularField: Perhaps 'pdfExportMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:678:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:678:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:679:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:679:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:679:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:679:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:679:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:679:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:679:	SingularField: Perhaps 'printMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:679:	SingularField: Perhaps 'printMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:679:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:679:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:680:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:680:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:680:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:680:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:680:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:680:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:680:	SingularField: Perhaps 'saveMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:680:	SingularField: Perhaps 'saveMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:680:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:680:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:681:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:681:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:681:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:681:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:681:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:681:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:681:	SingularField: Perhaps 'selectAllMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:681:	SingularField: Perhaps 'selectAllMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:681:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:681:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:682:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:682:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:682:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:682:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:682:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:682:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:682:	SingularField: Perhaps 'timeDateMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:682:	SingularField: Perhaps 'timeDateMenuItem' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:682:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:682:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JMenuItem' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:684:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:684:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:684:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:684:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:684:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:684:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:684:	ImmutableField: Private field 'textArea' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:684:	ImmutableField: Private field 'textArea' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:685:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:685:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:685:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:685:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:685:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:685:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:685:	ImmutableField: Private field 'cp' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:685:	ImmutableField: Private field 'cp' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:685:	ShortVariable: Avoid variables with short names like cp
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:685:	ShortVariable: Avoid variables with short names like cp
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:685:	SingularField: Perhaps 'cp' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:685:	SingularField: Perhaps 'cp' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:685:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JPanel' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:685:	UnnecessaryFullyQualifiedName: Unnecessary use of fully qualified name 'javax.swing.JPanel' due to existing import 'javax.swing.*'
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:686:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:686:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:686:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:686:	CommentRequired: Field comments are required
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:686:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:686:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:686:	ImmutableField: Private field 'sp' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:686:	ImmutableField: Private field 'sp' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:686:	ShortVariable: Avoid variables with short names like sp
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:686:	ShortVariable: Avoid variables with short names like sp
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:686:	SingularField: Perhaps 'sp' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:686:	SingularField: Perhaps 'sp' could be replaced by a local variable.
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:689:	MethodArgumentCouldBeFinal: Parameter 'grphcs' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:689:	MethodArgumentCouldBeFinal: Parameter 'grphcs' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:689:	MethodArgumentCouldBeFinal: Parameter 'i' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:689:	MethodArgumentCouldBeFinal: Parameter 'i' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:689:	MethodArgumentCouldBeFinal: Parameter 'pf' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:689:	MethodArgumentCouldBeFinal: Parameter 'pf' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:689:	ShortVariable: Avoid variables with short names like i
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:689:	ShortVariable: Avoid variables with short names like i
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:689:	ShortVariable: Avoid variables with short names like pf
+src/main/java/com/mycompany/texteditormaven/MainFrame.java:689:	ShortVariable: Avoid variables with short names like pf
+src/main/java/com/mycompany/texteditormaven/TextEditor.java:12:	UseUtilityClass: All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/com/mycompany/texteditormaven/TextEditor.java:12:	UseUtilityClass: All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/com/mycompany/texteditormaven/TextEditor.java:17:	MethodArgumentCouldBeFinal: Parameter 'args' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/TextEditor.java:17:	MethodArgumentCouldBeFinal: Parameter 'args' is not assigned and could be declared final
+src/main/java/com/mycompany/texteditormaven/TextEditor.java:19:	LocalVariableCouldBeFinal: Local variable 'mainFrame' could be declared final
+src/main/java/com/mycompany/texteditormaven/TextEditor.java:19:	LocalVariableCouldBeFinal: Local variable 'mainFrame' could be declared final
+src/test/java/TestTextEditor.java:21:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/test/java/TestTextEditor.java:21:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/test/java/TestTextEditor.java:21:	NoPackage: All classes, interfaces, enums and annotations must belong to a named package
+src/test/java/TestTextEditor.java:21:	NoPackage: All classes, interfaces, enums and annotations must belong to a named package
+src/test/java/TestTextEditor.java:23:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/TestTextEditor.java:23:	BeanMembersShouldSerialize: Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/TestTextEditor.java:23:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the mainFrame field if you want a default access modifier
+src/test/java/TestTextEditor.java:23:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the mainFrame field if you want a default access modifier
+src/test/java/TestTextEditor.java:23:	CommentRequired: Field comments are required
+src/test/java/TestTextEditor.java:23:	CommentRequired: Field comments are required
+src/test/java/TestTextEditor.java:23:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/test/java/TestTextEditor.java:23:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/test/java/TestTextEditor.java:27:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/test/java/TestTextEditor.java:27:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/test/java/TestTextEditor.java:28:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the open method if you want a default access modifier
+src/test/java/TestTextEditor.java:28:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the open method if you want a default access modifier
+src/test/java/TestTextEditor.java:30:	LocalVariableCouldBeFinal: Local variable 'jfc' could be declared final
+src/test/java/TestTextEditor.java:30:	LocalVariableCouldBeFinal: Local variable 'jfc' could be declared final
+src/test/java/TestTextEditor.java:31:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/test/java/TestTextEditor.java:31:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/test/java/TestTextEditor.java:31:	LocalVariableCouldBeFinal: Local variable 'returnValue' could be declared final
+src/test/java/TestTextEditor.java:31:	LocalVariableCouldBeFinal: Local variable 'returnValue' could be declared final
+src/test/java/TestTextEditor.java:33:	LocalVariableCouldBeFinal: Local variable 'path' could be declared final
+src/test/java/TestTextEditor.java:33:	LocalVariableCouldBeFinal: Local variable 'path' could be declared final
+src/test/java/TestTextEditor.java:39:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/test/java/TestTextEditor.java:39:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/test/java/TestTextEditor.java:40:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the save method if you want a default access modifier
+src/test/java/TestTextEditor.java:40:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the save method if you want a default access modifier
+src/test/java/TestTextEditor.java:41:	LocalVariableCouldBeFinal: Local variable 'text' could be declared final
+src/test/java/TestTextEditor.java:41:	LocalVariableCouldBeFinal: Local variable 'text' could be declared final
+src/test/java/TestTextEditor.java:43:	LocalVariableCouldBeFinal: Local variable 'jfc' could be declared final
+src/test/java/TestTextEditor.java:43:	LocalVariableCouldBeFinal: Local variable 'jfc' could be declared final
+src/test/java/TestTextEditor.java:44:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/test/java/TestTextEditor.java:44:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/test/java/TestTextEditor.java:44:	LocalVariableCouldBeFinal: Local variable 'returnValue' could be declared final
+src/test/java/TestTextEditor.java:44:	LocalVariableCouldBeFinal: Local variable 'returnValue' could be declared final
+src/test/java/TestTextEditor.java:46:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'path' (lines '46'-'50').
+src/test/java/TestTextEditor.java:46:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'path' (lines '46'-'50').
+src/test/java/TestTextEditor.java:46:	LocalVariableCouldBeFinal: Local variable 'path' could be declared final
+src/test/java/TestTextEditor.java:46:	LocalVariableCouldBeFinal: Local variable 'path' could be declared final
+src/test/java/TestTextEditor.java:46:	UnusedLocalVariable: Avoid unused local variables such as 'path'.
+src/test/java/TestTextEditor.java:46:	UnusedLocalVariable: Avoid unused local variables such as 'path'.
+src/test/java/TestTextEditor.java:47:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/test/java/TestTextEditor.java:47:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/test/java/TestTextEditor.java:47:	LocalVariableCouldBeFinal: Local variable 'result' could be declared final
+src/test/java/TestTextEditor.java:47:	LocalVariableCouldBeFinal: Local variable 'result' could be declared final
+src/test/java/TestTextEditor.java:48:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/TestTextEditor.java:48:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/TestTextEditor.java:52:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/test/java/TestTextEditor.java:52:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/test/java/TestTextEditor.java:53:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the search method if you want a default access modifier
+src/test/java/TestTextEditor.java:53:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the search method if you want a default access modifier
+src/test/java/TestTextEditor.java:53:	JUnitTestsShouldIncludeAssert: JUnit tests should include assert() or fail()
+src/test/java/TestTextEditor.java:53:	JUnitTestsShouldIncludeAssert: JUnit tests should include assert() or fail()
